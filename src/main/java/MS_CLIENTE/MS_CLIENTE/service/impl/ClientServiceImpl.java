@@ -6,6 +6,7 @@ import MS_CLIENTE.MS_CLIENTE.exception.ClientNotFoundException;
 import MS_CLIENTE.MS_CLIENTE.mapper.ClientMapper;
 import MS_CLIENTE.MS_CLIENTE.repository.ClientRepository;
 import MS_CLIENTE.MS_CLIENTE.service.ClientService;
+import lombok.AllArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-
+@AllArgsConstructor
 @Service
 public class ClientServiceImpl implements ClientService {
 
